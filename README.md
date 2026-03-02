@@ -2,7 +2,7 @@
 
 > Docker Compose examples for running AI apps with Crazyrouter backend.
 
-[Crazyrouter](https://crazyrouter.com?ref=github) — One API key, 300+ models, 45% cheaper.
+[Crazyrouter](https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community?ref=github) — One API key, 300+ models, 45% cheaper.
 
 ## 📋 Available Configurations
 
@@ -25,7 +25,7 @@ services:
     ports:
       - "3000:8080"
     environment:
-      - OPENAI_API_BASE_URL=https://crazyrouter.com/v1
+      - OPENAI_API_BASE_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1
       - OPENAI_API_KEY=sk-your-crazyrouter-key
     volumes:
       - open-webui-data:/app/backend/data
@@ -45,7 +45,7 @@ services:
       - "3210:3210"
     environment:
       - OPENAI_API_KEY=sk-your-crazyrouter-key
-      - OPENAI_PROXY_URL=https://crazyrouter.com/v1
+      - OPENAI_PROXY_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1
     restart: unless-stopped
 ```
 
@@ -59,7 +59,7 @@ services:
       - "3001:3000"
     environment:
       - OPENAI_API_KEY=sk-your-crazyrouter-key
-      - BASE_URL=https://crazyrouter.com
+      - BASE_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community
     restart: unless-stopped
 ```
 
@@ -71,7 +71,7 @@ services:
     image: ghcr.io/open-webui/open-webui:main
     ports: ["3000:8080"]
     environment:
-      - OPENAI_API_BASE_URL=https://crazyrouter.com/v1
+      - OPENAI_API_BASE_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1
       - OPENAI_API_KEY=sk-your-crazyrouter-key
     volumes: [open-webui-data:/app/backend/data]
     restart: unless-stopped
@@ -81,7 +81,7 @@ services:
     ports: ["3210:3210"]
     environment:
       - OPENAI_API_KEY=sk-your-crazyrouter-key
-      - OPENAI_PROXY_URL=https://crazyrouter.com/v1
+      - OPENAI_PROXY_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1
     restart: unless-stopped
 
   nextchat:
@@ -89,7 +89,7 @@ services:
     ports: ["3001:3000"]
     environment:
       - OPENAI_API_KEY=sk-your-crazyrouter-key
-      - BASE_URL=https://crazyrouter.com
+      - BASE_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community
     restart: unless-stopped
 
 volumes:
@@ -113,7 +113,7 @@ docker compose logs -f
 ```
 
 ## 🔗 Links
-- 🌐 [Crazyrouter](https://crazyrouter.com?ref=github)
+- 🌐 [Crazyrouter](https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community?ref=github)
 - 💬 [Telegram](https://t.me/crzrouter)
 
 ## 📄 License
